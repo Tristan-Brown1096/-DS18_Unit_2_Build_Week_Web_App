@@ -1,2 +1,2 @@
 release: python3 app.py migrate
-web: gunicorn 
+web gunicorn app:server
