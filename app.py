@@ -97,6 +97,8 @@ def predict(submit,input1, input2, input3, input4, input5, input6, input7, input
     model.fit(X_train, y_train)    
     return model.predict([team])
 
+server = app.server
+
 if __name__ == '__main__':
     app.run_server(debug=True)
 
